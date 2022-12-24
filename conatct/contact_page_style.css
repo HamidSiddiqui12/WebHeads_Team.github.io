@@ -8,7 +8,7 @@
 
 body {
     font-family: "Oswald", sans-serif;
-    background: linear-gradient(to top left, #ff499e, #a8e0ff);
+    background: linear-gradient(150deg, hsla(14, 100%, 57%, 1) 0%, hsla(54, 100%, 62%, 1) 71%);
 }
 
 .outer-box {
@@ -65,7 +65,7 @@ textarea {
     background: transparent;
     transition: 0.5s;
     outline: none;
-    border: 2px solid #3498db;
+    border: 2px solid hsl(14, 100%, 50%);
     border-radius: 5px;
     margin-top: 4px;
 }
@@ -87,20 +87,20 @@ textarea:focus {
 .signup-body p input {
     width: 100%;
     padding: 10px;
-    border: 2px solid #3498db;
+    border: 2px solid hsl(14, 100%, 50%);
     border-radius: 5px;
     margin-top: 4px;
 }
 
 .signup-body p input[type="submit"] {
-    background-color: #0099ff;
+    background-color:  hsla(14, 100%, 57%, 1);
     border: none;
     color: white;
     cursor: pointer;
 }
 
 .signup-body p input[type="submit"]:hover {
-    background-color: #0e84d3;
+    background-color: hsl(14, 100%, 50%);
 }
 
 textarea {

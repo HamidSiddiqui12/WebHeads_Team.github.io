@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Message</title>
+        <link rel="stylesheet" href="./contact_page_style.css" />
+    </head>
+
+    <body>
+
+        <section class="container">
+
+            <div class="outer-box">
+                <div class="inner-box">
+                    <div class="signup-header">
+
+                        <h1>Send us a message</h1>
+
+                    </div>
+
+                    <contact class="signup-body">
+
+                        <form action="#">
+
+                            <p>
+                                <label for="fullname">Full Name</label>
+                                <input type="text" placeholder="Enter Name" id="fullname" required />
+                            </p>
+                            <p>
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" placeholder="Enter Email-Id" required />
+                            </p>
+                            <p>
+                                <label for="message">Your Message </label>
+                                <textarea type="message" id="message" placeholder="Enter Message" style="height: 100px; padding: 10px;" required></textarea>
+                            </p>
+                            <p>
+                                <input type="submit" id="submit" value="Submit" class="msg_positon" onclick="open_popup()"/>
+                            </p>
+
+                        </form>
+
+                    </contact>
+
+                </div>
+
+                <footer class="details">
+                    <div class="message1">
+        
+                        <p>Address</p>
+                        <p>Webheads Pvt. Ltd, Mumbai, Thane, pin-code: 400601</p>
+        
+                    </div>
+        
+                    <div class="message2">
+        
+                        <p>Let's Talk</p>
+                        <p>+91-9999922222</p>
+        
+                    </div>
+        
+                    <div class="message3">
+        
+                        <p>General Support</p>
+                        <p>webheadsteam@gmail.com</p>
+        
+                    </div>
+        
+                </footer>
+
+            </div>
+
+        </section>
+
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+        <div class="circle c4"></div>
+
+        <div class="container_popup">
+
+            <div class="popup" id="popup_js">
+                <div>
+                    <h2>! Alert !</h2>
+                    <h3>This page is under process...</h3>
+                    <h4>Thank You!</h4>
+                </div>
+                <button type="button" onclick="close_popup()">OK</button>
+            </div>
+
+        </div>
+
+        <script>
+
+            let popup_js = document.getElementById("popup_js");
+
+            function open_popup() {
+                popup_js.classList.add("open_Popup");
+            }
+
+            function close_popup() {
+                popup_js.classList.remove("open_Popup");
+            }
+
+        </script>
+    </body>
+</html>

@@ -23,6 +23,7 @@
       body, html {
         height: 100%;
         line-height: 1.8;
+        scroll-behavior: smooth;
       }
 
       .bgimg-1 {
@@ -34,16 +35,24 @@
       }
 
       .bgimg-2 {
-        background-image: url("./img/shopping1.jpeg");
-        background-position: center;
+        background-image: url(./img/shopping1.jpeg);
+        /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2)), url(./img/shopping1.jpeg); */
         background-size: cover;
-        /* height: 100vh; */
         background-attachment: fixed;
       }
 
+      .back_filt{
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        padding: 50px 0px 50px 0px;
+        border: 2px solid rgb(0, 0, 0);
+        transition: ease-in .15s;
+      }
+
       .bgimg-3 {
-        background-image: url("./img/connection-world.jpg");
-        background-position: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .4)), url(./img/connection-world.jpg);
+        background-position:center;
         background-size: cover;
         background-attachment: fixed;
       }
@@ -117,14 +126,14 @@
     </nav>
 
     <div class="bgimg-1 w3-display-container" id="home">
-      
-      <div class="w3-display-left w3-card w3-margin-right w3-padding">
+    
+      <div class="w3-display-left w3-card w3-margin-right w3-padding w3-animate-opacity">
 
         <span class="w3-jumbo w3-hide-small" style="font-weight: 900;" id="glow">Welcome to our store </span><br>
         <h2><span class="w3-text-deep-orange">Don't just watch anime buy something if you are a fan.</span></h2>
 
       </div> 
-      <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <div class="w3-display-bottomleft w3-text-grey w3-large w3-animate-zoom" style="padding:24px 48px">
 
         <i class="fa fa-twitter w3-hover-text-deep-orange w3-padding w3-text-white" style="font-size:xx-large;"></i>
         <i class="fa fa-linkedin w3-hover-text-deep-orange w3-text-white" style="font-size:xx-large;" ></i>
@@ -138,17 +147,17 @@
 
       <h3 class="w3-center w3-black w3-hover-text-deep-orange" style="font-weight: 900;">ABOUT THE COMPANY</h3>
 
-      <p class="w3-center w3-large">We Promise</p>
+      <p class="w3-center w3-hover-text-deep-orange w3-xlarge" style="border-radius: 10px; border-bottom: 2px solid black; border-top: 2px solid black; ">We Promise</p>
 
-      <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="back_filt w3-row-padding w3-center" style="margin-top:64px">
         <div class="w3-quarter">
-          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-text-blue-grey w3-center"></i>
+          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-text-white w3-center"></i>
           <p class="w3-large">Online</p>
           <p>We support indie bussiness and we are placed all over the world.</p>
         </div>
 
         <div class="w3-quarter">
-          <i class="fa fa-heart w3-margin-bottom w3-jumbo w3-text-red"></i>
+          <i class="fa fa-heart w3-margin-bottom w3-jumbo w3-text-deep-orange"></i>
           <p class="w3-large">Passion</p>
           <p>We make customizable merch and work with dedication.</p>
         </div>
@@ -160,7 +169,7 @@
         </div>
 
         <div class="w3-quarter">
-          <i class="fa fa-cog w3-margin-bottom w3-jumbo w3-text-black"></i>
+          <i class="fa fa-cog w3-margin-bottom w3-jumbo w3-text-white"></i>
           <p class="w3-large">Support</p>
           <p>We have good customer care all over the world! Call us anytime anywhere.</p>
         </div>
@@ -169,16 +178,16 @@
 
     </div>
 
-    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-container w3-light-gray" style="padding:128px 16px">
       <div class="w3-row-padding">
         <div class="w3-col m6">
-          <h3 class="w3-text-deep-orange" style="font-weight: 900;">We design.....</h3>
+          <h3 class="w3-text-deep-orange w3-xxlarge" style="font-weight: 900;">We design.....</h3>
           <h6>We design our product with dedication and make sure the quality is maintained.<br> Customer satisfaction is our top priority.</h6>
 
         </div>
 
         <div class="w3-col m6">
-          <img class="w3-image w3-round-large w3-hover-shadow" src="https://www.webdew.com/hubfs/these-are-the-top-7-steps-of-web-designing-process.svg" alt="Buildings" width="700" height="394">
+          <img class="w3-image w3-round-large w3-hover-shadow" src="https://www.webdew.com/hubfs/these-are-the-top-7-steps-of-web-designing-process.svg" alt="Design" width="700" height="394">
         </div>
 
       </div>
@@ -253,25 +262,29 @@
 
     <div class="line"></div>
 
-    <div class="w3-container w3-row w3-center w3-black w3-text-deep-orange w3-padding-64 bgimg-3">
+    <div class="bgimg-3 w3-container w3-row w3-center w3-black w3-text-deep-orange w3-padding-64">
       <div class="w3-quarter">
         <span class="w3-xxlarge" style="font-weight: 900; font-size: large;">14+</span>
-        <br><p style="font-weight: 900; font-size: large;">Partners</p>
+        <br>
+        <p style="font-weight: 900; font-size: large;">Partners</p>
       </div>
 
       <div class="w3-quarter">
         <span class="w3-xxlarge" style="font-weight: 900; font-size: large;">55+</span>
-        <br><p style="font-weight: 900; font-size: large;">Projects Done</p>
+        <br>
+        <p style="font-weight: 900; font-size: large;">Projects Done</p>
       </div>
       
       <div class="w3-quarter w3-b">
         <span class="w3-xxlarge" style="font-weight: 900; font-size: large;">8900+</span>
-        <br><p style="font-weight: 900; font-size: large;">Happy Clients</p>
+        <br>
+        <p style="font-weight: 900; font-size: large;">Happy Clients</p>
       </div>
 
       <div class="w3-quarter">
         <span class="w3-xxlarge" style="font-weight: 900; font-size: large;">250+</span>
-        <br><p style="font-weight: 900; font-size: large;">Meetings</p>
+        <br>
+        <p style="font-weight: 900; font-size: large;">Meetings</p>
       </div>
 
     </div>
